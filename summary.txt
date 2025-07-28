@@ -1,0 +1,64 @@
+Name: Shrweta Naik  
+Location: Bengaluru, Karnataka, India  
+Email: shrweta10@gmail.com  
+LinkedIn: https://www.linkedin.com/in/shrweta-naik-008a70195
+
+---
+
+SUMMARY:
+
+Full Stack Data Scientist / Machine Learning Engineer with strong experience in Big Data, Kubernetes, and React.js. Proven record of applying advanced analytics and machine learning to solve real-world problems across multiple industries.
+
+---
+
+EXPERIENCE:
+
+IBM  
+Data Scientist  
+October 2024 – Present (10 months)
+
+Tech Mahindra  
+Data Scientist  
+June 2022 – September 2024 (2 years 4 months)
+
+NTT DATA  
+Data Scientist  
+December 2020 – May 2022 (1 year 6 months)
+
+LivNSense Technologies Pvt Ltd  
+Data Scientist  
+October 2019 – November 2020 (1 year 2 months)
+
+BNY Mellon  
+QA  
+May 2015 – March 2019 (3 years 11 months)
+
+---
+
+EDUCATION:
+
+Indian Institute of Technology, Roorkee  
+Executive PG in Cloud Computing and DevOps  
+April 2024 – April 2025
+
+Nagpur University  
+Bachelor's degree, Electronics  
+April 2011 – July 2015
+
+---
+
+TOP SKILLS:
+
+- Big Data
+- Kubernetes
+- React.js
+
+---
+
+CERTIFICATIONS:
+
+- Convolutional Neural Networks
+- Sequence Models
+- Introduction to Data Science Specialization
+- Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
+- Databases and SQL for Data Science with Python (with Honors)

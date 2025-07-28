@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+.env.*
+
+# VSCode
+.vscode/
+
+# MacOS/Linux/Windows system
+.DS_Store
+Thumbs.db
+
+# Pipenv/Poetry
+Pipfile.lock
+poetry.lock
+
+# Render/Heroku
+*.log
+
+# Jupyter notebooks (if any)
+.ipynb_checkpoints/
