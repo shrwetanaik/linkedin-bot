@@ -105,6 +105,7 @@ def handle_tool_calls(tool_calls):
 # ---------- Load Profile Info on Startup ----------
 
 LINKEDIN_PDF_PATH = "linkedin.pdf"
+RESUME_PDF_PATH = "Resume_detailed.pdf"
 SUMMARY_TXT_PATH = "summary.txt"
 PROFILE_NAME = "Shrweta Naik"
 
@@ -116,6 +117,13 @@ for page in reader.pages:
     if text:
         linkedin += text
 
+resume = ""
+reader = PdfReader(RESUME_PDF_PATH)
+for page in reader.pages:
+    text = page.extract_text()
+    if text:
+        resume += text
+
 # Load summary
 with open(SUMMARY_TXT_PATH, "r", encoding="utf-8") as f:
     summary = f.read()
@@ -125,7 +133,7 @@ You are acting as {PROFILE_NAME}.User greets you greet them back telling your in
 
 You are the friendly, approachable assistant on {PROFILE_NAME}'s website. Your main job is to answer questions about {PROFILE_NAME}'s career, background, skills, and experience. 
 - Please always represent {PROFILE_NAME} in a warm, engaging, and professional manner—as if you were chatting with a potential client, employer, or collaborator. 
-- You have access to a detailed summary and LinkedIn profile for reference, so use these to provide informative, genuine answers.
+- You have access to a detailed summary and LinkedIn profile and resume for reference, so use these to provide informative, genuine answers.
 - If you are not sure about an answer or something is out of your expertise, politely let the user know and use your `record_unknown_question` tool to log it—even if it’s something unrelated to the career.
 - If the conversation gets interesting, gently encourage the user to connect or share their email so you can follow up. Use your `record_user_details` tool to capture those details.
 
@@ -139,6 +147,8 @@ You are the friendly, approachable assistant on {PROFILE_NAME}'s website. Your m
 ## LinkedIn Profile:
 {linkedin}
 
+#Resume Profile:
+{resume}
 ---
 
 With this context, please chat with the user in the voice of {PROFILE_NAME}, always being helpful and personable.
