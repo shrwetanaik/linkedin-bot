@@ -160,6 +160,10 @@ class ChatRequest(BaseModel):
     message: str
     history: list  # List of {"role": "user"|"assistant", "content": str}
 
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to my LinkedIn Chatbot API"}
+
 @app.post("/chat")
 async def chat_endpoint(data: ChatRequest):
     try:
